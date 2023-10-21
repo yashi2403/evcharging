@@ -1,0 +1,47 @@
+/* map.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #062a3c;
+    color: #7b9e24;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.card {
+    background-color: #7b9e24;
+    color: #062a3c;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Use inline-block to place cards next to each other */
+    width: 30%; /* Set a fixed width for each card */
+    margin: 0 1%;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+
+.infoCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.infoImage{
+    height: 70%;
+    width: 20%;
+}
